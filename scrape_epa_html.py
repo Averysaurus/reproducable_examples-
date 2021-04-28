@@ -79,13 +79,8 @@ for row in rows:
 # evaluate
 len(mines)  
 
-# structure into DataFrame
+# structure into DataFrame, reshape.
 df_one = pd.DataFrame(np.array(rowData).reshape(476,4))
-df_test = pd.DataFrame(mines,columns=('alt_name', 
-                                      'description',
-                                      'region', 
-                                      'chapter'))
-
   
 # output to .csv
 df_one.to_csv("mine_output_test.csv") 
