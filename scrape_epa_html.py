@@ -6,6 +6,8 @@ Created on Sat Jan 16 01:09:57 2021
 @author: avery
 """
 
+# code to scrape html tables from EPA website.
+
 # import required modules
 import requests
 from bs4 import BeautifulSoup
@@ -44,7 +46,7 @@ detailCells[0]
 rowData = [cell.text for cell in detailCells]
 
 # check em out
-print(rowData[0]) # MIne Alt Name
+print(rowData[0]) # Mine alt Name
 print(rowData[1]) # Description
 print(rowData[2]) # Region
 print(rowData[3]) # Chapter
